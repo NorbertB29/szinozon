@@ -42,7 +42,7 @@ var controllingLogic = function () {
 					if ((i == j) && colorArray[j] == selectedColors[i]) {
 						resultColors[j] = "green";
 						includingSame[j] = true;
-						countColor[selectedColors[i]] = countColor[selectedColors[i]] ? countColor[selectedColors[i]]+1 : 1;
+						countColor[selectedColors[i]]++;
 					} 
 					j++;
 
@@ -60,7 +60,8 @@ var controllingLogic = function () {
 
 				if ((includingSame[k] === false) && ((countColor[selectedColors[k]] < genColorsCount[selectedColors[k]]) || (!(selectedColors[k] in countColor)))) {
 					resultColors[k] = "red";
-				} else if ((includingSame[k] === false) && (countColor[selectedColors[k]] >= genColorsCount[selectedColors[k]])) {
+					countColor[selectedColors[k]]++;
+				} else if (includingSame[k] === false) {
 					resultColors[k] = "white";
 				}
 
