@@ -1,0 +1,76 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Typography presets */
+hr {
+	border: solid #ddd;
+	border-width: 1px 0 0;
+	clear: both;
+	margin: 10px 0 30px;
+	height: 0;
+}
+
+/* Links */
+a {
+	color: $linkcolor;
+	text-decoration: none;
+	outline: 0;
+}
+
+a:hover, a:focus {
+	color: lighten($linkcolor, 20%);
+}
+
+/* Basic Styles */
+html {
+	position: relative;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+body {
+	position: relative;
+	min-width: 100%;
+	min-height: 100%;
+	background: $mainBackgroundColor;
+	font-size: 14px;
+	line-height: 1.6;
+	font-family: 'Open Sans' sans-serif;
+	color: $textColor;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+}
+
+.container-fluid {
+	padding: 0 !important;
+}
+
+.button {
+	display: inline-block;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	@include crossBrowser(transition, all 0.2s ease-in-out);
+}
+
+.button:hover {
+	background-color: $ctaHover;
+	color: $textHover;
+}
+
+.button-link {
+	display: block;
+	margin: 20px auto;
+	height: 50px;
+	width: 150px;
+	line-height: 50px;
+	background-color: $ctaColor;
+	color: $textColor;
+	@include crossBrowser(border-radius, 10px);
+}
+
+.space-gen {
+	height: 300px;
+}

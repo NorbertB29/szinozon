@@ -1,0 +1,38 @@
+.color-selector-wrap {
+	width: 100%;
+	position: relative;
+}
+
+.color-selector-wrap > * {
+	border-bottom: 3px solid $resultSection;
+}
+
+.color-selector-wrap div:last-child  {
+	border: 0;
+}
+
+.color-square-wrap {
+	background-color: $colorSelectSection;
+	height: $colorSelectorHeight;
+	white-space: nowrap;
+	text-align: center;
+	line-height: $colorSelectorHeight;
+}
+
+.result-wrap {
+	background-color: $resultSection;
+	height: $colorSelectorHeight;
+	white-space: nowrap;
+	text-align: center;
+}
+
+.result-wrap div:first-child {
+	margin-top: ($colorSelectorHeight/2)-($resultSquare+5);	
+}
+
+.control-section {
+	position: relative;
+	width: 100%;
+	@include crossBrowser(box-shadow, 0 -5px 10px 0 rgba(0,0,0, 0.3));
+	text-align: center;
+}

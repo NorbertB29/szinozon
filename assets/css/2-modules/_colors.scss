@@ -1,0 +1,59 @@
+.colors-container {
+	z-index: 100;
+	display: none;
+	position: absolute;
+	width: auto;
+	height: auto;
+	padding: 10px;
+	background-color: $resultSection;
+	top: 0;
+	left: 0; 
+	white-space: nowrap;
+	@include crossBrowser(border-radius, 5px);
+}
+
+.color {
+	display: inline-block;
+	height: $resultSquare;
+	width: $resultSquare;
+	background-color: $defaultSquareColor;
+	cursor: pointer;
+	@include crossBrowser(border-radius, 5px);
+	@include crossBrowser(transition, all 0.2s ease-in-out);
+}
+
+.color:hover {
+	border: 2px solid $colorSelectSection;
+}
+
+.red {
+	background-color: red;
+}
+
+.white {
+	background-color: white;
+}
+
+.blue {
+	background-color: blue;
+}
+
+.pink {
+	background-color: pink;
+}
+
+.orange {
+	background-color: orange;
+}
+
+.purple {
+	background-color: purple;
+}
+
+.yellow {
+	background-color: yellow;
+}
+
+.green {
+	background-color: green;
+}

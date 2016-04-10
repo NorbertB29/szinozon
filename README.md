@@ -1,0 +1,1 @@
+Színözön játék - Alkalmazas fejlesztés 3 óra feladat

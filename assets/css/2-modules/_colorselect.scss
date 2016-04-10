@@ -1,0 +1,43 @@
+.color-square {
+	display: inline-block;
+	height: $colorSquare;
+	width: $colorSquare;
+	background-color: $defaultSquareColor;
+	margin-right: $colorSquare;
+	margin-top: $colorSquare/2;
+	cursor: pointer;
+	@include crossBrowser(border-radius, 10px);
+	@include crossBrowser(transition, all 0.2s ease-in-out);
+}
+
+.color-square:hover {
+	background-color: $squareHover;
+}
+
+.result-square {
+	display: inline-block;
+	height: $resultSquare;
+	width: $resultSquare;
+	background-color: $defaultSquareColor;
+	@include crossBrowser(border-radius, 5px);
+	margin-right: 5px;
+}
+
+.control-btn {
+	height: 70px;
+	line-height: 70px;
+	width: 250px;
+	background-color: $ctaColor;
+	@include crossBrowser(border-radius, 0 0 20px 20px);
+	font-size: 20px;
+	cursor: pointer;
+}
+
+@media (max-width: 500px) {
+	.color-square {
+		height: 30px;
+		width: 30px;
+		margin-right: 30px;
+		margin-top: 15px;
+	}
+}
