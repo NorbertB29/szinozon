@@ -4,7 +4,7 @@ $(document).ready(function () {
 	$(colorSector).append(COLOR_SECTION_HTML);
 
 	window.gameAttempt = 1;
-	window.MAX_ATTEMPT = 6;
+	window.MAX_ATTEMPT = 10;
 
 	window.colorTable = $(".colors-container");
 	window.currentSquares = $($(colorSector).children()[gameAttempt]).find(".color-square");
